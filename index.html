@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Technician Portfolio</title>
+    <meta name="description" content="Professional portfolio of a Solar PV Technician specializing in installation, O&M, R&D, and design">
+    <meta name="keywords" content="solar energy, PV technician, renewable energy, solar installation, maintenance">
+    
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #FFB703;
+            --secondary-color: #0057B8;
+            --dark-gray: #2B2D42;
+            --light-gray: #8D99AE;
+            --bg-white: #FFFFFF;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply font-sans text-[var(--dark-gray)] bg-[var(--bg-white)];
+        }
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-bold;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-[var(--dark-gray)] rounded-lg font-semibold transition-all duration-300 hover:shadow-lg;
+        }
+        .btn-secondary {
+            @apply px-6 py-3 bg-[var(--secondary-color)] text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-lg;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
